@@ -91,7 +91,7 @@ fun TipTimeLayout() {
             leadingIcon = R.drawable.money,
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType = KeyboardType.Number,
-                imeAction = ImeAction.Next
+                imeAction = ImeAction.Done
             ),
             value = amountInput,
             onValueChanged = { amountInput = it },
@@ -186,7 +186,6 @@ internal fun calculateTip(
     return NumberFormat.getCurrencyInstance().format(tip)
 }
 
-// [Reconstitué] Aperçu fourni par le code de démarrage
 @Preview(showBackground = true)
 @Composable
 fun TipTimeLayoutPreview() {
